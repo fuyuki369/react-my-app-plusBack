@@ -1,0 +1,55 @@
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {  /*Linkはaとして適応できる*/
+    color: white;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+main {
+    padding: 1rem;
+}
+
+@media (max-width:600px){
+    header h1{
+        font-size: 1.2rem;
+        margin-bottom: 0.3rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav a{
+        display: block;
+        font-size: 1rem;
+        padding: 0.6rem;
+        text-align: center;
+        background: #444;
+        border-radius: 6px;
+    }
+
+    nav a:hover {
+        background: #666;
+    }
+}

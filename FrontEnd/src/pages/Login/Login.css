@@ -1,0 +1,77 @@
+body {
+    background-color: rgb(240, 242, 245); 
+    margin: 0; 
+    padding: 0; 
+}
+
+.login-container {  
+    background: rgb(255, 255, 255); 
+    width: 500px;   
+    margin: 80px auto; 
+    padding: 30px;  
+    border-radius: 5px; 
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.uiForm {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.formField {
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 40px; 
+    gap: 20px; 
+}
+
+input {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.login-btn {
+    background-color: rgba(80, 96, 160, 0.825); 
+    color: white; 
+    border: none; 
+    padding: 10px; 
+    margin-top: 50px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: 0.5s; 
+}
+
+.login-btn:hover { 
+    background-color: rgb(64, 77, 128);  
+}
+
+.login-container p {
+    color: rgb(253, 8, 8); 
+}
+
+.not-login{
+    margin-top: 10px;
+    text-align: end;
+}
+
+@media (max-width: 600px){
+    .login-container{
+        width: 90%; /*画面幅に合わせる*/
+        margin: 40px auto; /*上下の余白を無くす*/
+        padding: 20px; /*内側余白を減らす*/
+    }
+
+    h1{
+        font-size: 1.2rem;
+    }
+
+    input, .login-btn{
+        font-size: 1rem;
+        padding: 12px; /*押しやすく広げる*/
+    }
+}
