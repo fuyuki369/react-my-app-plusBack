@@ -9,7 +9,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(cors({  //  ← 追加
-    origin: "http://localhost:5173",  // フロントのURL  なんでこのURLになっちゃうの？
+    origin: "http://localhost:5173",  // フロントのURL 
     credentials: true, // 必要ならクッキーや認証情報も送れるようにする
 }));
 
