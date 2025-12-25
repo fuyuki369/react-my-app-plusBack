@@ -31,7 +31,7 @@ cd FrontEnd
 npm run dev
 
 2. ターミナルに表示される  
-   `http://localhost:xxxx`  
+   http://localhost:xxxx`
    をブラウザで開いてください。
 
 ---
